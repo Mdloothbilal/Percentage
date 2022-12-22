@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  *{
+    background-color:azure;
+  }
+  table{
+    background-color: azure;
+  }
+</style>
+</head>
+<body>
+    <div  id="div">
+        <h2 style="color: blue;" >Percentage Calculater</h2>
+        <p> 
+        <table>
+          <tr>
+            <td><label style="color: blue;" >Obtained Marks</label></td>
+            <td><input  id="o"></td>
+          </tr>
+          <tr>
+            <td><label style="color: blue;" >Total Marks</label></td>
+            <td><input   id="t"></td>
+          </tr>
+          <tr>
+            <td><label style="color: blue;" >Percentage</label></td>
+            <td><input   id="p"></td>
+          </tr>
+          <tr>
+            <td><button style="color: blue;" onclick="percent()">Submit</button></td>
+        
+          </tr>
+        </p>
+        </table>
+
+    </div>
+    <script>
+          function percent()
+          {
+                document.getElementById("p").value=(document.getElementById("o").value/document.getElementById("t").value)*100
+          }
+          {
+            window.alert("see the percentage")
+          }
+    </script>
+</body>
+</html>
